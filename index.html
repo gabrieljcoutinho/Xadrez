@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Xadrez — Jogável</title>
+
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <div class="info">
+    <div class="turn" id="turnIndicator">Vez: Branco</div>
+    <div class="legenda">Clique na peça para selecionar — clique na casa para mover / capturar.</div>
+  </div>
+
+  <div class="tabuleiro" id="tabuleiro">
+    <!-- Linha 1 (pretas principais) -->
+    <div class="casa preto"><img src="./imgs/PrecasPreta/torrePreta.jpg" alt="torre preta"></div>
+    <div class="casa branco"><img src="./imgs/PrecasPreta/cavaloPreto.jpg" alt="cavalo preto"></div>
+    <div class="casa preto"><img src="./imgs/PrecasPreta/bispoPreto.jpg" alt="bispo preto"></div>
+    <div class="casa branco"><img src="./imgs/PrecasPreta/reiPreto.jpg" alt="rei preto"></div>
+    <div class="casa preto"><img src="./imgs/PrecasPreta/rainhaPreta.jpg" alt="rainha preta"></div>
+    <div class="casa branco"><img src="./imgs/PrecasPreta/bispoPreto.jpg" alt="bispo preto"></div>
+    <div class="casa preto"><img src="./imgs/PrecasPreta/cavaloPreto.jpg" alt="cavalo preto"></div>
+    <div class="casa branco"><img src="./imgs/PrecasPreta/torrePreta.jpg" alt="torre preta"></div>
+
+    <!-- Linha 2 (peões pretos) -->
+    <div class="casa branco"><img src="./imgs/PrecasPreta/peaoPreto.jpg" alt="peão preto"></div>
+    <div class="casa preto"><img src="./imgs/PrecasPreta/peaoPreto.jpg" alt="peão preto"></div>
+    <div class="casa branco"><img src="./imgs/PrecasPreta/peaoPreto.jpg" alt="peão preto"></div>
+    <div class="casa preto"><img src="./imgs/PrecasPreta/peaoPreto.jpg" alt="peão preto"></div>
+    <div class="casa branco"><img src="./imgs/PrecasPreta/peaoPreto.jpg" alt="peão preto"></div>
+    <div class="casa preto"><img src="./imgs/PrecasPreta/peaoPreto.jpg" alt="peão preto"></div>
+    <div class="casa branco"><img src="./imgs/PrecasPreta/peaoPreto.jpg" alt="peão preto"></div>
+    <div class="casa preto"><img src="./imgs/PrecasPreta/peaoPreto.jpg" alt="peão preto"></div>
+
+    <!-- Linhas 3 a 6 (vazias) -->
+    <div class="casa preto"></div><div class="casa branco"></div><div class="casa preto"></div><div class="casa branco"></div><div class="casa preto"></div><div class="casa branco"></div><div class="casa preto"></div><div class="casa branco"></div>
+    <div class="casa branco"></div><div class="casa preto"></div><div class="casa branco"></div><div class="casa preto"></div><div class="casa branco"></div><div class="casa preto"></div><div class="casa branco"></div><div class="casa preto"></div>
+    <div class="casa preto"></div><div class="casa branco"></div><div class="casa preto"></div><div class="casa branco"></div><div class="casa preto"></div><div class="casa branco"></div><div class="casa preto"></div><div class="casa branco"></div>
+    <div class="casa branco"></div><div class="casa preto"></div><div class="casa branco"></div><div class="casa preto"></div><div class="casa branco"></div><div class="casa preto"></div><div class="casa branco"></div><div class="casa preto"></div>
+
+    <!-- Linha 7 (peões brancos) -->
+    <div class="casa preto"><img src="./imgs/PecasBrancas/peaoBranco.jpg" alt="peão branco"></div>
+    <div class="casa branco"><img src="./imgs/PecasBrancas/peaoBranco.jpg" alt="peão branco"></div>
+    <div class="casa preto"><img src="./imgs/PecasBrancas/peaoBranco.jpg" alt="peão branco"></div>
+    <div class="casa branco"><img src="./imgs/PecasBrancas/peaoBranco.jpg" alt="peão branco"></div>
+    <div class="casa preto"><img src="./imgs/PecasBrancas/peaoBranco.jpg" alt="peão branco"></div>
+    <div class="casa branco"><img src="./imgs/PecasBrancas/peaoBranco.jpg" alt="peão branco"></div>
+    <div class="casa preto"><img src="./imgs/PecasBrancas/peaoBranco.jpg" alt="peão branco"></div>
+    <div class="casa branco"><img src="./imgs/PecasBrancas/peaoBranco.jpg" alt="peão branco"></div>
+
+    <!-- Linha 8 (brancas principais) -->
+    <div class="casa branco"><img src="./imgs/PecasBrancas/torreBranca.jpg" alt="torre branca"></div>
+    <div class="casa preto"><img src="./imgs/PecasBrancas/cavaloBranco.jpg" alt="cavalo branco"></div>
+    <div class="casa branco"><img src="./imgs/PecasBrancas/bispoBranco.jpg" alt="bispo branco"></div>
+    <div class="casa preto"><img src="./imgs/PecasBrancas/reiBranco.jpg" alt="rei branco"></div>
+    <div class="casa branco"><img src="./imgs/PecasBrancas/rainhaBranca.jpg" alt="rainha branca"></div>
+    <div class="casa preto"><img src="./imgs/PecasBrancas/bispoBranco.jpg" alt="bispo branco"></div>
+    <div class="casa branco"><img src="./imgs/PecasBrancas/cavaloBranco.jpg" alt="cavalo branco"></div>
+    <div class="casa preto"><img src="./imgs/PecasBrancas/torreBranca.jpg" alt="torre branca"></div>
+  </div>
+
+  <script src="./script.js">
+    //
+  </script>
+</body>
+</html>

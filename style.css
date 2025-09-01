@@ -1,0 +1,134 @@
+/* Reset básico e corpo */
+body {
+    background: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 16px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+}
+
+/* Informações do jogo */
+.info {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.turn {
+    padding: 10px 16px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    font-weight: 700;
+    color: #222;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.turn:hover {
+    background: #fefefe;
+    transform: translateY(-2px);
+}
+
+/* Tabuleiro */
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(8, 100px);
+    border: 6px solid #222;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+/* Casas */
+.casa {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.casa:hover {
+    transform: scale(1.05);
+}
+
+.preto {
+    background-color: #4b4b4b;
+}
+
+.branco {
+    background-color: #f5deb3;
+}
+
+/* Peças */
+.casa img {
+    max-width: 80%;
+    max-height: 80%;
+    user-select: none;
+    pointer-events: none;
+    transition: transform 0.2s;
+}
+
+/* Destaques */
+.highlight {
+    outline: 6px solid rgba(0, 200, 0, 0.35);
+    outline-offset: -4px;
+}
+
+.selected {
+    box-shadow: inset 0 0 0 5px rgba(255, 215, 0, 0.25);
+}
+
+.captura {
+    box-shadow: inset 0 0 0 5px rgba(255, 0, 0, 0.25);
+}
+
+.casa.castle {
+    outline: 6px solid rgba(0, 100, 255, 0.5);
+    outline-offset: -4px;
+}
+
+/* Legenda e capturados */
+.legenda {
+    font-size: 14px;
+    color: #333;
+}
+
+.captured {
+    animation: fadeOut 0.3s forwards;
+}
+
+/* Animação de captura */
+@keyframes fadeOut {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+/* Responsividade leve */
+@media (max-width: 900px) {
+    .tabuleiro {
+        grid-template-columns: repeat(8, 70px);
+        grid-template-rows: repeat(8, 70px);
+    }
+
+    .casa img {
+        max-width: 60%;
+        max-height: 60%;
+    }
+}
